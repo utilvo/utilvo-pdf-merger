@@ -1,0 +1,32 @@
+{
+  "title": "utilvo-pdf-merger: Zero-Dependency Binary PDF Stream Inspector & Merger SDK",
+  "description": "<p>Open-source multi-language software development kit (Node.js, Python, Rust, Go, PHP, Ruby, Dart, Elixir, Swift, Lua, and .NET) for binary PDF header validation, <code>FlateDecode</code> (<code>/ObjStm</code>) cross-reference object stream decompression, accurate page-tree counting, and deterministic PDF stream concatenation.</p><p>Engineered as the companion library for the client-side <a href=\"https://utilvo.com/pdf-tools/merge-pdf\">Merge PDF</a> document processing utility by <a href=\"https://utilvo.com\">Utilvo</a> and <a href=\"https://utilvo.com/shield\">Utilvo Shield</a>.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Ayoub, Islam",
+      "affiliation": "Utilvo",
+      "orcid": "0009-0002-1503-5639"
+    }
+  ],
+  "keywords": [
+    "pdf",
+    "merge-pdf",
+    "pdf-merger",
+    "document-processing",
+    "utilvo"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://utilvo.com/pdf-tools/merge-pdf",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/utilvo/utilvo-pdf-merger",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
