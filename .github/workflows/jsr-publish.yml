@@ -15,4 +15,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Publish package to JSR.io
-        run: npx jsr publish
+        run: npx --yes jsr publish --allow-dirty
