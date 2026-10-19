@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "utilvo-pdf-merger"
+version = "1.0.0"
+description = "Lightweight library for inspecting PDF binary headers, counting pages, validating xref tables, and merging multiple PDF byte streams."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Utilvo", email = "utilvo.com@gmail.com" }]
+requires-python = ">=3.8"
+keywords = ["pdf", "merge-pdf", "pdf-merger", "pdf-parser", "xref"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://utilvo.com/pdf-tools/merge-pdf"
+Repository = "https://github.com/utilvo/utilvo-pdf-merger"

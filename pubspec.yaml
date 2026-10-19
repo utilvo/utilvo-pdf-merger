@@ -1,0 +1,13 @@
+name: utilvo_pdf_merger
+description: Lightweight Dart and Flutter library for inspecting PDF binary headers, counting pages, and merging multiple PDF byte streams.
+version: 1.0.0
+homepage: https://utilvo.com/pdf-tools/merge-pdf
+repository: https://github.com/utilvo/utilvo-pdf-merger
+topics:
+  - pdf
+  - document
+  - parser
+  - utility
+
+environment:
+  sdk: '>=2.17.0 <4.0.0'

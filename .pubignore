@@ -1,0 +1,13 @@
+dotnet/
+docs/
+Sources/
+lua/
+src/
+utilvo_pdf_merger/
+*.go
+*.mod
+*.toml
+*.json
+*.podspec
+*.rockspec
+*.exs

@@ -1,0 +1,12 @@
+[package]
+name = "utilvo-pdf-merger"
+version = "1.0.0"
+edition = "2021"
+description = "Lightweight library for inspecting PDF binary headers, counting pages, validating xref tables, and merging multiple PDF byte streams."
+license = "MIT"
+homepage = "https://utilvo.com/pdf-tools/merge-pdf"
+repository = "https://github.com/utilvo/utilvo-pdf-merger"
+documentation = "https://docs.rs/utilvo-pdf-merger"
+keywords = ["pdf", "merge", "document", "parser", "xref"]
+categories = ["parsing", "text-processing"]
+include = ["src/**/*", "Cargo.toml", "README.md", "LICENSE"]

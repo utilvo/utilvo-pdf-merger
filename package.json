@@ -1,0 +1,29 @@
+{
+  "name": "utilvo-pdf-merger",
+  "version": "1.0.0",
+  "description": "Lightweight library for inspecting PDF binary headers, counting pages, validating xref tables, and merging multiple PDF byte streams.",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "pdf",
+    "merge-pdf",
+    "pdf-merger",
+    "pdf-parser",
+    "xref",
+    "document"
+  ],
+  "homepage": "https://utilvo.com/pdf-tools/merge-pdf",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utilvo/utilvo-pdf-merger.git"
+  },
+  "author": "Utilvo",
+  "license": "MIT",
+  "files": [
+    "src/index.js",
+    "src/index.d.ts",
+    "README.md",
+    "LICENSE"
+  ]
+}

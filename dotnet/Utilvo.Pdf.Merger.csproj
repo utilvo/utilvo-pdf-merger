@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <PackageId>Utilvo.Pdf.Merger</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Utilvo</Authors>
+    <Company>Utilvo</Company>
+    <Description>Lightweight .NET library for inspecting PDF binary headers, counting /Type /Page dictionary objects, validating xref tables, and merging multiple PDF byte streams.</Description>
+    <PackageProjectUrl>https://utilvo.com/pdf-tools/merge-pdf</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/utilvo/utilvo-pdf-merger</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>pdf;merge-pdf;pdf-merger;pdf-parser;xref;document</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>

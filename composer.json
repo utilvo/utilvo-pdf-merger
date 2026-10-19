@@ -1,0 +1,28 @@
+{
+  "name": "utilvo/utilvo-pdf-merger",
+  "description": "Lightweight PHP library for inspecting PDF binary headers, counting pages, validating xref tables, and merging multiple PDF byte streams.",
+  "type": "library",
+  "keywords": [
+    "pdf",
+    "merge-pdf",
+    "pdf-merger",
+    "pdf-parser",
+    "xref"
+  ],
+  "homepage": "https://utilvo.com/pdf-tools/merge-pdf",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Utilvo",
+      "homepage": "https://utilvo.com/pdf-tools/merge-pdf"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Utilvo\\\\PdfMerger\\\\": "src/"
+    }
+  }
+}
