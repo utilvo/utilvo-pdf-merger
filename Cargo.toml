@@ -1,6 +1,6 @@
 [package]
 name = "utilvo-pdf-merger"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 description = "Lightweight library for inspecting PDF binary headers, counting pages, validating xref tables, and merging multiple PDF byte streams."
 license = "MIT"

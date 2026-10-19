@@ -4,7 +4,7 @@ defmodule UtilvoPdfMerger.MixProject do
   def project do
     [
       app: :utilvo_pdf_merger,
-      version: "1.0.0",
+      version: "1.0.1",
       elixir: "~> 1.12",
       description: "Lightweight Elixir library for inspecting PDF binary headers, counting pages, and merging PDF byte streams.",
       package: package(),

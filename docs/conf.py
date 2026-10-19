@@ -1,7 +1,7 @@
 project = "utilvo-pdf-merger"
 copyright = "2026, Utilvo"
 author = "Utilvo"
-release = "1.0.0"
+release = "1.0.1"
 
 extensions = []
 master_doc = "index"
@@ -11,7 +11,7 @@ html_theme_options = {
     "github_user": "utilvo",
     "github_repo": "utilvo-pdf-merger",
     "extra_nav_links": {
-        "Utilvo Merge PDF Tool": "https://utilvo.com/pdf-tools/merge-pdf",
+        "Merge PDF": "https://utilvo.com/pdf-tools/merge-pdf",
         "GitHub Repository": "https://github.com/utilvo/utilvo-pdf-merger",
     },
 }

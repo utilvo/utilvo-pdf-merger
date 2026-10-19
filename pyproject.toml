@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "utilvo-pdf-merger"
-version = "1.0.0"
+version = "1.0.1"
 description = "Lightweight library for inspecting PDF binary headers, counting pages, validating xref tables, and merging multiple PDF byte streams."
 readme = "README.md"
 license = { text = "MIT" }
