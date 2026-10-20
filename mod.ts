@@ -1,8 +1,16 @@
+/**
+ * Metadata and structural validation results returned by {@link inspectPdf}.
+ */
 export interface PdfInspectionResult {
+  /** Whether the document contains both a valid `%PDF-1.x` header and `%%EOF` trailer marker. */
   isValid: boolean;
+  /** Extracted PDF specification version (for example `"1.7"`), or `null` if missing. */
   version: string | null;
+  /** Total number of `/Type /Page` leaf objects detected in the document buffer. */
   pageCount: number;
+  /** Whether the byte stream contains a closing `%%EOF` marker. */
   hasEof: boolean;
+  /** Total byte length of the inspected PDF buffer. */
   byteLength: number;
 }
 
@@ -27,12 +35,24 @@ function fromLatin1(str: string): Uint8Array {
   return out;
 }
 
+/**
+ * Counts the number of `/Type /Page` dictionary entries in a raw PDF byte buffer or Latin-1 string.
+ *
+ * @param pdfData Raw PDF bytes (`Uint8Array`) or binary string.
+ * @returns Total number of pages found in the PDF stream.
+ */
 export function countPdfPages(pdfData: Uint8Array | string): number {
   const raw = toLatin1(pdfData);
   const matches = raw.match(PAGE_REGEX);
   return matches ? matches.length : 0;
 }
 
+/**
+ * Inspects a PDF buffer to verify its `%PDF-1.x` header, `%%EOF` marker, version, and page count.
+ *
+ * @param pdfData Raw PDF bytes (`Uint8Array`) or binary string.
+ * @returns A {@link PdfInspectionResult} summary of the PDF structure.
+ */
 export function inspectPdf(pdfData: Uint8Array | string): PdfInspectionResult {
   const raw = toLatin1(pdfData);
   const verMatch = raw.slice(0, 1024).match(VERSION_REGEX);
@@ -47,6 +67,12 @@ export function inspectPdf(pdfData: Uint8Array | string): PdfInspectionResult {
   };
 }
 
+/**
+ * Merges multiple uncompressed PDF buffers into a single valid `%PDF-1.7` document with renumbered objects and rebuilt `xref` table.
+ *
+ * @param documents Array of PDF byte buffers (`Uint8Array`) or binary strings to merge in order.
+ * @returns A `Uint8Array` containing the merged PDF document.
+ */
 export function mergePdfBuffers(documents: Array<Uint8Array | string>): Uint8Array {
   if (!Array.isArray(documents) || documents.length === 0) {
     throw new Error("At least one PDF document is required");
